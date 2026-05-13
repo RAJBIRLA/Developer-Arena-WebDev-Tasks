@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Portfolio</title>
+</head>
+<body>
+
+    <!-- SECTION 1: HEADER & NAVIGATION -->
+    <header>
+        <h1>My Portfolio</h1>
+        <nav>
+            <!-- These are internal links that jump to sections below using 'id' -->
+            <a href="#about">About Me</a> | 
+            <a href="#skills">Skills</a> | 
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <hr> <!-- This adds a horizontal line to separate sections -->
+
+    <main>
+        <!-- SECTION 2: ABOUT SECTION -->
+        <section id="about">
+            <h2>About Me</h2>
+            <p>Hello! I am a Fresher currently enrolled in a web development internship. I am passionate about learning how to build modern, functional websites.</p>
+            <!-- Replace 'profile.jpg' with an actual image name in your 'images' folder -->
+            <img src="images/profile.jpeg" alt="A photo of me" width="150">
+        </section>
+
+        <hr>
+
+        <!-- SECTION 3: SKILLS SECTION -->
+        <section id="skills">
+            <h2>Technical Skills</h2>
+            <ul>
+                <li>HTML5 Structure</li>
+                <li>Basic CSS Styling</li>
+                <li>Version Control (GitHub)</li>
+            </ul>
+        </section>
+
+        <hr>
+
+        <!-- SECTION 4: CONTACT FORM -->
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <p>If you'd like to work together, please fill out the form below:</p>
+            
+            <form>
+                <!-- 'label' tells the user what to type in the box -->
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required><br><br>
+
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required><br><br>
+
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" rows="4" cols="30" placeholder="Write your message here..." required></textarea><br><br>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <hr>
+
+    <!-- SECTION 5: FOOTER -->
+    <footer>
+        <p>&copy; 2026 My Portfolio. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
