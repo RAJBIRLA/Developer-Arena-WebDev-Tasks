@@ -1,0 +1,87 @@
+/* 1. Reset default spacing so everything looks consistent */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 2. Set up our design theme and font */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7f6;
+    color: #333;
+    line-height: 1.6;
+}
+header {
+    background-color: #2c3e50; /* Dark slate blue */
+    color: white;
+    padding: 1.5rem;
+    display: flex;
+    justify-content: space-between; /* Pushes name to left, links to right */
+    align-items: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none; /* Removes the ugly underline */
+    margin-left: 20px;
+    font-weight: bold;
+    transition: color 0.3s ease; /* Makes color changes smooth */
+}
+/* When a user hovers over a menu link */
+nav a:hover {
+    color: #3498db; /* Changes link to bright blue */
+}
+
+/* Style the button in your form */
+button {
+    background-color: #3498db;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+/* When a user hovers over the button */
+button:hover {
+    background-color: #2980b9; /* Darkens the blue */
+}
+section {
+    max-width: 800px;
+    margin: 40px auto; /* Centers the sections on the screen */
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Adds a subtle shadow */
+}
+
+ul {
+    list-style-position: inside; /* Keeps bullets inside our clean boxes */
+    margin-top: 10px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column; /* Stacks name on top of the menu links */
+        text-align: center;
+    }
+    
+    nav {
+        margin-top: 15px;
+    }
+    
+    nav a {
+        margin: 0 10px; /* Adjusts spacing for thumbs to click easily */
+    }
+}
